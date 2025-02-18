@@ -2,7 +2,7 @@
 
 ## Address.h
 class Address:
-	private:
+	protected:
 		string address
 		string city
 		string state
@@ -10,27 +10,31 @@ class Address:
 	public:
 		Address()
 		void init(address, city, state, zip)
-		string getAddress()
 		void printAddress()
 
 ## Date.h
 class Date:
-	private:
+	protected:
 		string date
+		int month
+		int day
+		int year
 	public:
 		Date()
-		void init(date)
-		int getDate()
+		void init(dateString)
+			Algorithm needed
 		void printDate()
 
 ## Student.h
 class Student
-	private:
+	protected:
+		string studentString
 		string firstName
 		string lastName
-		string address
-		string birthDate
-		string gradDate
+		Date* dob
+		Date* expectedGrad
+		Address* Address
+		int creditHours
 	public:
 		Student()
 		~Student()
@@ -38,8 +42,22 @@ class Student
 		void getLastFirst()
 		void printStudent()
 
+
+
+
+
 ## Address.cpp
-	
+Address::Address():
+	Address::address = "123 Playground Street"
+	Address::city = "Town"
+	Address::state = "State"
+	Address::zip = "12345"
+
+Address::init(string address, string city, string state, string zip):
+	Address::address = address
+	Address::city = city
+	Address::state = state
+	Address::zip = zip
 
 ## Date.cpp
 
