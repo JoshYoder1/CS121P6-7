@@ -1,5 +1,5 @@
 program: Address.o Date.o main.o
-	g++ -g Address.o main.o -o program
+	g++ -g Address.o Date.o main.o -o program
 
 main.o: Address.h Date.h main.cpp
 	g++ -c -g main.cpp

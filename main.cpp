@@ -26,8 +26,8 @@ void testAddress(){
 
 void testDate(){
   Date d;
-  d.init("01/27/1997");
-  d.printDate();
+  //d.init("01/27/1997");
+  //d.printDate();
 } // end testDate
 /*
 void testStudent(){

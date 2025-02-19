@@ -34,6 +34,7 @@ void Date::init(std::string dateString){
 	Date::date = months[Date::month] + " " + day + ", " + year;
 }//end init()
 
+
 void Date::printDate(){
 	std::cout << Date::date << std::endl;
 }//end printdate

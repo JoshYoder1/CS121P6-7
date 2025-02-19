@@ -15,4 +15,5 @@ class Date{
 		void init(std::string dateString);//algorithm needed
 		void printDate();
 };
+
 #endif
