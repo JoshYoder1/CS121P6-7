@@ -4,7 +4,7 @@
 #ifndef DATE_H_EXISTS
 #define DATE_H_EXISTS
 
-class date{
+class Date{
 	protected:
 		std::string date;
 		int month;
@@ -13,6 +13,6 @@ class date{
 	public:
 		Date();
 		void init(std::string dateString);//algorithm needed
-		void printDate;
+		void printDate();
 };
 #endif
