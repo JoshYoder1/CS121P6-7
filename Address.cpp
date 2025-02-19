@@ -1,3 +1,5 @@
+//Address.cpp
+
 #include <iostream>
 #include "Address.h"
 
@@ -15,6 +17,10 @@ void Address::init(std::string tempStreet,std::string tempCity,std::string tempS
 	Address::zip = tempZip;
 }// end init()
 
-void printAddress(){
-	std::cout << Address::street << Address::city << Address::state << Address::zip << std::endl;
+void Address::printAddress(){
+	std::cout << "Address: ";
+	std::cout << Address::street << " "; 
+	std::cout << Address::city << " ";
+	std::cout << Address::state << " "; 
+	std::cout << Address::zip << std::endl;
 }// end printAddress

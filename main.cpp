@@ -1,7 +1,9 @@
+//main.cpp
+
 #include <iostream>
-//#include "date.h"
-#include "address.h"
-//#include "student.h"
+//#include "Date.h"
+#include "Address.h"
+//#include "Student.h"
 
 void testAddress();
 //void testDate();
@@ -16,6 +18,7 @@ int main(){
 } // end main
 
 void testAddress(){
+	std::cout << "Testing Address..." << std::endl;
   Address a;
   a.init("123 W Main St", "Muncie", "IN", "47303");
   a.printAddress();
