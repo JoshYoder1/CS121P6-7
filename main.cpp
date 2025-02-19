@@ -6,13 +6,13 @@
 //#include "Student.h"
 
 void testAddress();
-//void testDate();
+void testDate();
 //void testStudent();
 
 int main(){
   std::cout << "Hello!" << std::endl;
   testAddress();
-//  testDate();
+  testDate();
 //  testStudent();
   return 0;
 } // end main
@@ -25,9 +25,9 @@ void testAddress(){
 } // end testAddress
 
 void testDate(){
- Date d;
- d.init("01/27/1997");
- d.printDate();
+  Date d;
+  d.init("01/27/1997");
+  d.printDate();
 } // end testDate
 /*
 void testStudent(){

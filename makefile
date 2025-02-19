@@ -1,4 +1,4 @@
-program: Address.o main.o
+program: Address.o Date.o main.o
 	g++ -g Address.o main.o -o program
 
 main.o: Address.h Date.h main.cpp
