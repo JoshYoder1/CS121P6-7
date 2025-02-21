@@ -38,3 +38,7 @@ void Date::init(std::string dateString){
 void Date::printDate(){
 	std::cout << Date::date;
 }//end printdate
+
+std::string Date::getDate(){
+	return(Date::date);
+}

@@ -1,6 +1,9 @@
 //Student.h
 
 #include <string>
+#include "Date.h"
+#include "Address.h"
+
 #ifndef STUDENT_H_EXISTS
 #define STUDENT_H_EXISTS	
 
@@ -17,7 +20,7 @@ class Student{
 		Student();
 		~Student();
 		void init(std::string studentString);
-		std::string getLastFirst; 
-		void printStudent;
+		std::string getLastFirst(); 
+		void printStudent();
 };// end Student
 #endif

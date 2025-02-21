@@ -10,14 +10,14 @@ Student::Student(){
 	Student::firstName = "John";
 	Student::lastName = "Marston";
 	dob = new Date();
-	Date expectedGrad;
-	Student::address = Address a;
+	expectedGrad = new Date();
+	address = new Address();
 	Student::creditHours = 70;
 }//end Student
 
 Student::~Student(){
 	delete dob;
-	delete expectedgrad;
+	delete expectedGrad;
 	delete address;
 }// end ~Student
 
@@ -30,35 +30,39 @@ void Student::init(std::string studentString){
 	std::string zip;
 	std::string dobString;
 	std::string expectedGradString;
+	std::string temp;
 
 	std::stringstream ss(studentString);
 	//set variables
-	std::getline(ss, Student::firstName, ',');
-	std::getline(ss, Student::lastName. ',');
+	std::getline(ss, temp, ',');
+	Student::fristName = temp;
+	std::getline(ss, temp, ',');
+	Student::lastName = temp;
 	std::getline(ss, street, ',');
 	std::getline(ss, city, ',');
 	std::getline(ss, state, ',');
 	std::getline(ss, zip, ',');
 	std::getline(ss, dobString, ',');
 	std::getline(ss, expectedGradString, ',');
-	std::getline(ss, Student::creditHours, ',');
+	std::getline(ss, temp, ',');
+	Student::creditHours = temp;
 	//initialize Date instances
-	Student::dob.init(dobString);
-	Student::expectedGrad.init(expectedGradString);
+	Student::dob->init(dobString);
+	Student::expectedGrad->init(expectedGradString);
 	//initialize Address instance
-	Student::address.init(street,city,state,zip);
+	Student::address->init(street,city,state,zip);
 }// end init
 
 std::string Student::getLastFirst(){
-	name = Student::lastName + ", " + Student::firstName;
+	std::string name = Student::lastName + ", " + Student::firstName;
 	return name;
 }// end getLastFirst
-
+ 
 void Student::printStudent(){
 	std::cout << Student::firstName;
 	std::cout << Student::lastName;
-	Student::address.printAddress();
-	Student::dob.printDate();
-	Student::expectedGrad.printDate();
+	Student::address->printAddress();
+	Student::dob->printDate();
+	Student::expectedGrad->printDate();
 	std::cout << Student::creditHours;
 }
