@@ -36,5 +36,5 @@ void Date::init(std::string dateString){
 
 
 void Date::printDate(){
-	std::cout << Date::date << std::endl;
+	std::cout << Date::date;
 }//end printdate
