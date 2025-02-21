@@ -35,7 +35,7 @@ void Student::init(std::string studentString){
 	std::stringstream ss(studentString);
 	//set variables
 	std::getline(ss, temp, ',');
-	Student::fristName = temp;
+	Student::firstName = temp;
 	std::getline(ss, temp, ',');
 	Student::lastName = temp;
 	std::getline(ss, street, ',');
@@ -59,10 +59,15 @@ std::string Student::getLastFirst(){
 }// end getLastFirst
  
 void Student::printStudent(){
-	std::cout << Student::firstName;
-	std::cout << Student::lastName;
+	std::cout << "Student Name: ";
+	std::cout << Student::firstName << ", ";
+	std::cout << Student::lastName << std::endl;
+	std::cout << "Student's Address: ";
 	Student::address->printAddress();
+	std::cout << std::endl << "Student's date of Birth: ";
 	Student::dob->printDate();
+	std::cout << std::endl << "Student's expected graduation date:";
 	Student::expectedGrad->printDate();
+	std::cout << std::endl << "Student's credit hours: ";
 	std::cout << Student::creditHours;
 }

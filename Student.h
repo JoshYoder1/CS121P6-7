@@ -16,7 +16,7 @@ class Student{
 		Date* expectedGrad;
 		Address* address;
 		std::string creditHours;
-	private:
+	public:
 		Student();
 		~Student();
 		void init(std::string studentString);
