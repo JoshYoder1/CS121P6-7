@@ -37,7 +37,7 @@ class Student
 		string lastName
 		Date* dob
 		Date* expectedGrad
-		Address* Address
+		Address* address
 		int creditHours
 	public:
 		Student()
