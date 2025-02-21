@@ -3,7 +3,7 @@
 #include <iostream>
 #include "Date.h"
 #include "Address.h"
-//#include "Student.h"
+#include "Student.h"
 
 void testAddress();
 void testDate();
@@ -39,4 +39,3 @@ void testStudent(){
   std::cout << student->getLastFirst();
   delete student;
 } // end testStudent
-*/

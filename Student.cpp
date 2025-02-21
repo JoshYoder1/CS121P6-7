@@ -1,6 +1,6 @@
 //Student.cpp
 
-#include <stringstream>
+#include <sstream>
 #include <string>
 #include <iostream>
 #include "Student.h"
@@ -12,14 +12,16 @@ Student::Student(){
 	dob = new Date();
 	Date expectedGrad;
 	Student::address = Address a;
-	Student::creditHours = 70
+	Student::creditHours = 70;
 }//end Student
 
 Student::~Student(){
 	delete dob;
+	delete expectedgrad;
+	delete address;
 }// end ~Student
 
-Student::init(std::string studentString){
+void Student::init(std::string studentString){
 	Student::studentString = studentString;
 	
 	std::string street;
@@ -47,12 +49,12 @@ Student::init(std::string studentString){
 	Student::address.init(street,city,state,zip);
 }// end init
 
-Student::getLastFirst(){
+std::string Student::getLastFirst(){
 	name = Student::lastName + ", " + Student::firstName;
 	return name;
 }// end getLastFirst
 
-Student::printStudent(){
+void Student::printStudent(){
 	std::cout << Student::firstName;
 	std::cout << Student::lastName;
 	Student::address.printAddress();

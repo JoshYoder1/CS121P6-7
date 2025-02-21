@@ -16,7 +16,7 @@ class Student{
 	private:
 		Student();
 		~Student();
-		void init(studentString);
+		void init(std::string studentString);
 		std::string getLastFirst; 
 		void printStudent;
 };// end Student
