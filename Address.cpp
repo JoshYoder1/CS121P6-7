@@ -18,9 +18,8 @@ void Address::init(std::string tempStreet,std::string tempCity,std::string tempS
 }// end init()
 
 void Address::printAddress(){
-	std::cout << "Address: ";
-	std::cout << Address::street << ", "; 
-	std::cout << Address::city << ", ";
+	std::cout << Address::street << std::endl; 
+	std::cout << Address::city << " ";
 	std::cout << Address::state << ", "; 
-	std::cout << Address::zip;
+	std::cout << Address::zip << std::endl;
 }// end printAddress

@@ -59,15 +59,13 @@ std::string Student::getLastFirst(){
 }// end getLastFirst
  
 void Student::printStudent(){
-	std::cout << "Student Name: ";
 	std::cout << Student::firstName << ", ";
 	std::cout << Student::lastName << std::endl;
-	std::cout << "Student's Address: ";
 	Student::address->printAddress();
-	std::cout << std::endl << "Student's date of Birth: ";
+	std::cout << "DOB: ";
 	Student::dob->printDate();
-	std::cout << std::endl << "Student's expected graduation date:";
+	std::cout << std::endl << "Grad:";
 	Student::expectedGrad->printDate();
-	std::cout << std::endl << "Student's credit hours: ";
+	std::cout << std::endl << "Credits: ";
 	std::cout << Student::creditHours;
 }
