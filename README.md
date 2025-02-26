@@ -74,6 +74,7 @@ Address::printAddress():
 	output Address::zip endline
 ```
 ## Date.cpp
+```
 include iostream
 include sstream
 include string
@@ -163,8 +164,11 @@ output "4) sort students" end line
 ```
 open student data file
 
-read each line of file
+read each line of file:
+	create new instance of each student
+	add intance to dynamic list
 	
+close student data file
 ```
-
+###printStudentNames
 
