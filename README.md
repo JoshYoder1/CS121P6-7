@@ -1,6 +1,7 @@
 # CS121P6
 
 ## Address.h
+```
 include string
 
 class Address:
@@ -13,8 +14,9 @@ class Address:
 		Address()
 		void init(address, city, state, zip)
 		void printAddress()
-
+```
 ## Date.h
+```
 include iostream
 
 class Date:
@@ -28,8 +30,9 @@ class Date:
 		void init(dateString)
 			Algorithm needed
 		void printDate()
-
+```
 ## Student.h
+```
 class Student
 	protected:
 		string studentString
@@ -45,12 +48,9 @@ class Student
 		void init(studentString)
 		void getLastFirst()
 		void printStudent()
-
-
-
-
-
+```
 ## Address.cpp
+```
 include iostream
 include Address.h
 
@@ -72,7 +72,7 @@ Address::printAddress():
 	output Address::city " "
 	output Address::state " "
 	output Address::zip endline
-
+```
 ## Date.cpp
 include iostream
 include sstream
@@ -103,6 +103,5 @@ Date::init(string dateString):
 
 Date::printDate():
 	output Date::date endline
-
-
+```
 ## Student.cpp
