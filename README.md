@@ -118,35 +118,37 @@ include "Student.h"
 void testAddress()
 void testDate()
 void testStudent()
-void printStudentNames()
-void printStudentData()
-void findStudent()
-string sortStudents()
+void printStudentNames(dynamic list)
+void printStudentData(dynamic list)
+void findStudent(dynamic list)
+string sortStudents(dynamic list)
 void printOptions()
-void initializeStudents()
+void initializeStudents(dynamic list)
 
 int main():
-	//test
-	/*comment out
+	comment: test
+	start comment
 	std::cout "Hello!" end line
 	testAddress()
 	testDate()
 	testStudent()
-	*/stop comment
+	end comment
 
 	bool keepGoing = true
-	
+	string students = create dynamic list
+	initializeStudents(students)
+
 	while keepGoing = true:
 		printOptions()
 		answer = UserInput
 		if answer == 0:
 			keepGoing = false
 		elif asnwer == 1:
-			printStudentNames()
+			printStudentNames(Students)
 		elif answer == 2:
-			printStudentData()
+			printStudentData(Students)
 		elif answer == 3:
-			findStudent()
+			findStudent(Students)
 		elif answer == 4:
 			sortStudents()
 		else:
@@ -160,7 +162,7 @@ output "2) print student data" end line
 output "3) find students" end line
 output "4) sort students" end line
 ```
-###initializeStudents
+###initializeStudents(string dynamic list)
 ```
 open student data file
 
@@ -170,5 +172,13 @@ read each line of file:
 	
 close student data file
 ```
-###printStudentNames
+###printStudentNames(string dynamic list)
+```
+iterate through list:
+	name = instance.printLastFirst()
+	output endline name
+```
+###printStudentData
+```
 
+```
