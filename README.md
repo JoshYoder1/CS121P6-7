@@ -105,3 +105,66 @@ Date::printDate():
 	output Date::date endline
 ```
 ## Student.cpp
+```
+```
+##main.cpp
+```
+include <iostream>
+include "Date.h"
+include "Address.h"
+include "Student.h"
+
+void testAddress()
+void testDate()
+void testStudent()
+void printStudentNames()
+void printStudentData()
+void findStudent()
+string sortStudents()
+void printOptions()
+void initializeStudents()
+
+int main():
+	//test
+	/*comment out
+	std::cout "Hello!" end line
+	testAddress()
+	testDate()
+	testStudent()
+	*/stop comment
+
+	bool keepGoing = true
+	
+	while keepGoing = true:
+		printOptions()
+		answer = UserInput
+		if answer == 0:
+			keepGoing = false
+		elif asnwer == 1:
+			printStudentNames()
+		elif answer == 2:
+			printStudentData()
+		elif answer == 3:
+			findStudent()
+		elif answer == 4:
+			sortStudents()
+		else:
+			output "Choose a valid option (0-4)"
+```
+###printOptions
+```
+output "0) quit" end line
+output "1) print student names" end line
+output "2) print student data" end line
+output "3) find students" end line
+output "4) sort students" end line
+```
+###initializeStudents
+```
+open student data file
+
+read each line of file
+	
+```
+
+
