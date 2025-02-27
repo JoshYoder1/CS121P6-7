@@ -123,6 +123,7 @@ void printStudentNames(dynamic list)
 void printStudentData(dynamic list)
 void findStudent(dynamic list)
 string sortStudents(dynamic list)
+bool compare(const Student& a, const Student& b, int sortType)
 void printOptions()
 void initializeStudents(dynamic list)
 
@@ -134,6 +135,8 @@ int main():
 	testDate()
 	testStudent()
 	end comment
+
+	vector<Student> students = {}	
 
 	bool keepGoing = true
 	string students = create dynamic list
@@ -196,11 +199,16 @@ bool keepGoing = true
 
 while keepGoing == true:
 	choice = input
-	if choice is 0:
-
-	elif choice is 1:
-
-	elif choice:
-
+	sort<Student>(students.begin(), students.end(), compare(choice))
+```
+### compare(const Student& a, const Student b, int sortType)
+```
+	if sortType = 0:
+		return a.getFirst() < b.getFirst()
+	elif sortType = 1:
+		return a.getLast() < b.getLast()
+	elif sortType = 2:
+		return a.getHours() < b.getHours()
 	else:
+		output invalid choice
 ```
