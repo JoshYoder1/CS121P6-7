@@ -25,5 +25,10 @@ debug: program
 
 save:
 	git add *
+	git rm Address.o
+	git rm Date.o
+	git rm Student.o
+	git rm main.o
+	git rm program
 	git commit *
 	git push origin main
