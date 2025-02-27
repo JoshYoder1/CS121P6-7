@@ -22,3 +22,8 @@ run: program
 
 debug: program
 	gdb program
+
+push:
+	git add *
+	git commit *
+	git push origin main

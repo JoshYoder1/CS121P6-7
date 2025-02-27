@@ -54,7 +54,7 @@ void Student::init(std::string studentString){
 }// end init
 
 std::string Student::getLastFirst(){
-	std::string name = Student::lastName + ", " + Student::firstName + ", " Student::creditHours;
+	std::string name = Student::lastName + ", " + Student::firstName + ", " + Student::creditHours;
 	return name;
 }// end getLastFirst
  
