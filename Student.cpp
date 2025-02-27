@@ -30,22 +30,23 @@ void Student::init(std::string studentString){
 	std::string zip;
 	std::string dobString;
 	std::string expectedGradString;
-	std::string temp;
+	std::string tempS;
+	int tempI;
 
 	std::stringstream ss(studentString);
 	//set variables
-	std::getline(ss, temp, ',');
-	Student::firstName = temp;
-	std::getline(ss, temp, ',');
-	Student::lastName = temp;
+	std::getline(ss, tempS, ',');
+	Student::firstName = tempS;
+	std::getline(ss, tempS, ',');
+	Student::lastName = tempS;
 	std::getline(ss, street, ',');
 	std::getline(ss, city, ',');
 	std::getline(ss, state, ',');
 	std::getline(ss, zip, ',');
 	std::getline(ss, dobString, ',');
 	std::getline(ss, expectedGradString, ',');
-	std::getline(ss, temp, ',');
-	Student::creditHours = temp;
+	std::getline(ss, tempS, ',');
+	Student::creditHours = tempI;
 	//initialize Date instances
 	Student::dob->init(dobString);
 	Student::expectedGrad->init(expectedGradString);
@@ -53,8 +54,24 @@ void Student::init(std::string studentString){
 	Student::address->init(street,city,state,zip);
 }// end init
 
+std::string Student::getFirst(){
+	return Student::firstName;
+}// end getFirst
+
+std::string Student::getLast(){
+	return Student::lastName;
+}// end getLast
+
+int Student::getHours(){
+	
+	return Student::creditHours;
+}// end getHours
+
 std::string Student::getLastFirst(){
-	std::string name = Student::lastName + ", " + Student::firstName + ", " + Student::creditHours;
+	std::stringstream ss;
+	ss << Student::creditHours;
+	std::string credits = ss.str();
+	std::string name = Student::lastName + ", " + Student::firstName + ", " + credits;
 	return name;
 }// end getLastFirst
  

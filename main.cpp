@@ -1,6 +1,8 @@
 //main.cpp
 
 #include <iostream>
+#include <vector>
+#include <algorithm>
 #include "Date.h"
 #include "Address.h"
 #include "Student.h"
@@ -8,12 +10,22 @@
 void testAddress();
 void testDate();
 void testStudent();
+void printStudentNames(/*vector*/);
+void printStudentdata();
+void findStudent();
+std::string sortStudents();
+bool compare(const Student& a, const Student& b, int sortType);
+void printOptions();
+void initializeStudents();
 
 int main(){
-  std::cout << "Hello!" << std::endl;
+	
+  std::cout << "Hello!" << std::endl;/*
   testAddress();
   testDate();
   testStudent();
+	*/
+  
   return 0;
 } // end main
 

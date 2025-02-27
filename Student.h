@@ -15,11 +15,14 @@ class Student{
 		Date* dob;
 		Date* expectedGrad;
 		Address* address;
-		std::string creditHours;
+		int creditHours;
 	public:
 		Student();
 		~Student();
 		void init(std::string studentString);
+		std::string getFirst();
+		std::string getLast();
+		int getHours();
 		std::string getLastFirst(); 
 		void printStudent();
 };// end Student
