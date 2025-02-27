@@ -1,4 +1,4 @@
-# CS121P6
+# CS121P6-7
 
 ## Address.h
 ```
@@ -108,9 +108,10 @@ Date::printDate():
 ## Student.cpp
 ```
 ```
-##main.cpp
+## main.cpp
 ```
 include <iostream>
+include <algorithm>
 include "Date.h"
 include "Address.h"
 include "Student.h"
@@ -154,7 +155,7 @@ int main():
 		else:
 			output "Choose a valid option (0-4)"
 ```
-###printOptions
+### printOptions
 ```
 output "0) quit" end line
 output "1) print student names" end line
@@ -162,7 +163,7 @@ output "2) print student data" end line
 output "3) find students" end line
 output "4) sort students" end line
 ```
-###initializeStudents(string dynamic list)
+### initializeStudents(string dynamic list)
 ```
 open student data file
 
@@ -172,13 +173,34 @@ read each line of file:
 	
 close student data file
 ```
-###printStudentNames(string dynamic list)
+### printStudentNames(string dynamic list)
 ```
 iterate through list:
 	name = instance.printLastFirst()
 	output endline name
 ```
-###printStudentData
+### printStudentData(string dynamic list)
 ```
+iterate through list:
+	data = instance.printStudent
+	output data ----------------------------------
+```
+### sortstudents(string dynamic list)
+```
+output "Sort by:"
+output "0) First Name"
+output "1) Last Name"
+output "2) Credit Hours"
 
+bool keepGoing = true
+
+while keepGoing == true:
+	choice = input
+	if choice is 0:
+
+	elif choice is 1:
+
+	elif choice:
+
+	else:
 ```
