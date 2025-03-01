@@ -3,6 +3,9 @@
 #include <iostream>
 #include <vector>
 #include <algorithm>
+#include <fstream>
+#include <sstream>
+#include <string>
 #include "Date.h"
 #include "Address.h"
 #include "Student.h"
@@ -10,13 +13,13 @@
 void testAddress();
 void testDate();
 void testStudent();
-void printStudentNames(/*vector*/);
-void printStudentdata();
-void findStudent();
-std::string sortStudents();
+void printStudentNames(const std::vector<Student>& students);
+void printStudentdata(const std::vector<Student>& students);
+void findStudent(const std::vector<Student>& students);
+std::string sortStudents(const std::vector<Student>& students);
 bool compare(const Student& a, const Student& b, int sortType);
 void printOptions();
-void initializeStudents();
+void initializeStudents(const std::vector<Student>& students);
 
 int main(){
 	
@@ -26,6 +29,11 @@ int main(){
   testStudent();
 	*/
   
+  std::vector<Student> students = {};
+
+	bool keepGoing = true;
+	initializeStudents(students);
+
   return 0;
 } // end main
 
@@ -51,3 +59,20 @@ void testStudent(){
   std::cout << student->getLastFirst();
   delete student;
 } // end testStudent
+
+void initializeStudents(const std::vector<Student>& students){
+  std::cout << "initializeStudents---" << std::endl;
+  std::ifstream file("students.csv");
+
+  if(!file){
+    std::cout << "!!!error opening file!!!" << std::endl;
+  }// end if
+
+  else:
+    std::string line;
+    std::string temp;
+
+    while(std::getline(file, line)){
+      std::stringstream ss(line);
+    }
+}// end initializeStudents
